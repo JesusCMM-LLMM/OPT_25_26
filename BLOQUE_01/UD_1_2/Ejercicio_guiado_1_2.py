@@ -1,11 +1,9 @@
 nombre = input("¿Cómo te llamas? ")
-edad = input("¿Cuántos años tienes? ")
+edad = int(input("¿Cuántos años tienes? "))
 
-altura = input("¿Cuánto mides? ")
+altura = float(input("¿Cuánto mides? "))
 
 
-estudia = input("¿Estudias actualmente? (y/n) ")
-respuesta = bool(estudia)
-estudia = respuesta == "y"
+estudia = input("¿Estudias actualmente? (y/n) ").lower() == "y"
 
-print(f"Me llamo {nombre}, tengo {edad} años, mido {altura} y actualmente estudio: True")
+print(f"Me llamo {nombre}, tengo {edad} años, mido {altura} y actualmente estudio: {estudia}")
