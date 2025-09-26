@@ -9,6 +9,12 @@
 
 | Ejercicios UD 1.2                                                    | Descripción                 |
 |----------------------------------------------------------------------|-----------------------------|
-| [Ejercicio guiado 2](BLOQUE_01/UD_1_2/Ejercicio_guiado_1.2.py)       | Segundo ejercicio guiado     |
+| [Ejercicio guiado 2](BLOQUE_01/UD_1_2/Ejercicio_guiado_1_2.py)       | Segundo ejercicio guiado     |
 | [Actividad evaluable 2](BLOQUE_01/UD_1_2/b1_2_calculadora_simple.py) | Segundo ejercicio a entregar     |
 | [Actividad evaluable 3](BLOQUE_01/UD_1_2/b1_3_conversor_datos.py)    | Tercer ejercicio a entregar     |
+
+| Ejercicios UD 1.3                                       | Descripción                 |
+|---------------------------------------------------------|-----------------------------|
+| [Ejercicio guiado 3](BLOQUE_01/UD_1_3/comparaciones.py) | Tercer ejercicio guiado     |
+| [Actividad evaluable 4](BLOQUE_01/UD_1_3/b1_4_login.py) | Cuarto ejercicio a entregar |
+
