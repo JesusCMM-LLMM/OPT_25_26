@@ -34,3 +34,10 @@
 |-----------------------------------------------------------------|----------------------------|
 | [Ejercicio guiado 6](BLOQUE_01/UD_1_6/buscador_numero.py)       | Quinto ejercicio guiado    |
 | [Actividad evaluable 7](BLOQUE_01/UD_1_6/b1_7_filtrar_lista.py) | Sexto ejercicio a entregar |
+
+
+| Ejercicios UD 1.7                                                   | Descripción                  |
+|---------------------------------------------------------------------|------------------------------|
+| [Ejercicio guiado 7](BLOQUE_01/UD_1_7/saludo_documentado.py)        | Sexto ejercicio guiado       |
+| [Actividad evaluable 8](BLOQUE_01/UD_1_7/b1_8_tabla_multiplicar.py) | Séptimo ejercicio a entregar |
+
