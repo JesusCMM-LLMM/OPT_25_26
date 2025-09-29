@@ -23,3 +23,14 @@
 | [Ejercicio guiado 4](BLOQUE_01/UD_1_4/clasificador_edad.py)               | Cuarto ejercicio guiado     |
 | [Actividad evaluable 5](BLOQUE_01/UD_1_4/b1_5_calculadora_condicional.py) | Quinto ejercicio a entregar |
 
+
+| Ejercicios UD 1.5                                                    | Descripción                 |
+|----------------------------------------------------------------------|-----------------------------|
+| [Ejercicio guiado 5](BLOQUE_01/UD_1_5/tabla_multiplicar.py)          | Cuarto ejercicio guiado     |
+| [Actividad evaluable 6](BLOQUE_01/UD_1_5/b1_6_contador_regresivo.py) | Quinto ejercicio a entregar |
+
+
+| Ejercicios UD 1.6                                               | Descripción                |
+|-----------------------------------------------------------------|----------------------------|
+| [Ejercicio guiado 6](BLOQUE_01/UD_1_6/buscador_numero.py)       | Quinto ejercicio guiado    |
+| [Actividad evaluable 7](BLOQUE_01/UD_1_6/b1_7_filtrar_lista.py) | Sexto ejercicio a entregar |

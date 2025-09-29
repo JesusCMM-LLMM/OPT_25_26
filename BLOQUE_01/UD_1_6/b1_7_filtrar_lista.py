@@ -1,0 +1,13 @@
+lista = ["Ana", "Pedro", "Alba", "Lucía", "Rafa", "Mario", "Álvaro"]
+
+"""
+Este programa recorre una lista de nombres y muestra en pantalla
+solo aquellos que NO comienzan con la letra 'A' o 'a'.
+Se utiliza un bucle for para iterar por la lista y la sentencia
+'continue' para omitir los nombres que comienzan con 'A' o 'a'.
+"""
+
+for n in lista:
+    if n.lower().startswith("a") or n.lower().startswith("á"):  # Convertimos el nombre a minúsculas (lower())
+       continue                                                 # y comprobamos si empieza (startswith()) por 'a' o por 'á'
+    print(f"Nombres válidos: {n}")
