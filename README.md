@@ -41,3 +41,9 @@
 | [Ejercicio guiado 7](BLOQUE_01/UD_1_7/saludo_documentado.py)        | Sexto ejercicio guiado       |
 | [Actividad evaluable 8](BLOQUE_01/UD_1_7/b1_8_tabla_multiplicar.py) | Séptimo ejercicio a entregar |
 
+
+| Ejercicios UD 1.8                                                  | Descripción                  |
+|--------------------------------------------------------------------|------------------------------|
+| [Ejercicio guiado 8](BLOQUE_01/UD_1_8/ejerc_guiado_8.py)           | Sexto ejercicio guiado       |
+| [Actividad evaluable 8](BLOQUE_01/UD_1_8/b1_9_analizador_notas.py) | Séptimo ejercicio a entregar |
+
