@@ -80,5 +80,9 @@ if (opt == 1):
         password = input("Introduce una nueva contraseña: ")
         print("Contraseña creada correctamente")
 
+    usu_reg.append(username)
+    cont_reg.append(password)
+    print(f"´{usu_reg}")
+
 else:
     print("Te queda código por hacer, chaval")
