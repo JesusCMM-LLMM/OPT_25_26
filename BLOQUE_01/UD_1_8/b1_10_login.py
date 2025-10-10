@@ -24,7 +24,8 @@ Antes de aceptar la contraseña, debes validarla con estas reglas:
     Contener al menos una mayúscula.
     Contener al menos un número.
     Contener al menos un símbolo especial (!@#$%&*?, etc.).
-        Si no cumple las reglas → muestra un mensaje de error y vuelve a pedir el usuario o la contraseña.
+
+Si no cumple las reglas → muestra un mensaje de error y vuelve a pedir el usuario o la contraseña.
 
 Inicio de sesión:
 
@@ -48,28 +49,36 @@ print("| [2].- Iniciar sesión                 |")
 print("| [3].- Salir                          |")
 print("|######################################|")
 
+usu_reg = []
+cont_reg = []
+
 opt = int(input("       Introduce tu opción: "))
 
 if (opt == 1):
     username = input("Introduce usuario a registrar: ")
-    if len(username) < 3 :
-        print(f"El usuario debe tener más de 3 caracteres")
-    elif '@' not in username:
-        print(f"El usuario debe contener una @")
-    elif not (username.endswith('.com') or username.endswith('.es') or username.endswith('.net')):
-        print(f"El usuario debe terminar en .com, .es o .net")
-    elif re.search(r'[!#\$%&\*\?]', username):  # símbolos especiales no permitidos
-        print(f"El usuario no debe tener caracteres especiales")
-    else:
-        print(f"Usuario {username} creado correctamente")
+    car_no_perm = ['!', '#', '$', '%', '&', '*', '?']
+    while (
+            len(username) <= 3 or
+            '@' not in username or
+            not (username.endswith('.com') or username.endswith('.es') or username.endswith('.net')) or
+            any(c in username for c in car_no_perm)
+    ):
+        print(
+            "El usuario debe tener más de 3 caracteres, contener '@', terminar en .com, .net o .es y no incluir caracteres especiales (!, #, $, %, &, *, ?)")
+        username = input("Introduce un nombre de usuario válido: ")
+
+    print(f"Usuario {username} creado correctamente")
+    password = input("Introduce la nueva contraseña: ")
+    while (
+            len(password) < 8 or
+            not any(c.isupper() for c in password) or
+            not any(c.islower() for c in password) or
+            not any(c in car_no_perm for c in password)
+    ):
+        print(
+            "La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula y un carácter especial (!, @, #, $, %, &, *, ?).")
+        password = input("Introduce una nueva contraseña: ")
+        print("Contraseña creada correctamente")
+
 else:
     print("Te queda código por hacer, chaval")
-
-
-
-
-
-
-
-
-
