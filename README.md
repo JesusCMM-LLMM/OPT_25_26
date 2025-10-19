@@ -45,5 +45,5 @@
 | Ejercicios UD 1.8                                                           | Descripción                           |
 |-----------------------------------------------------------------------------|---------------------------------------|
 | [Ejercicio guiado 8](BLOQUE_01/UD_1_8/ejerc_guiado_8.py)                    | Octavo ejercicio guiado               |
-| [Actividad evaluable 8](BLOQUE_01/UD_1_8/b1_9_analizador_notas.py)          | Noveno ejercicio a entregar           |
+| [Actividad evaluable 9](BLOQUE_01/UD_1_8/b1_9_analizador_notas.py)          | Noveno ejercicio a entregar           |
 | [ACTIVIDAD FINAL BLOQUE 01](BLOQUE_01/UD_1_8/b1_10_login.py) | Actividad final del primer bloque     |  
