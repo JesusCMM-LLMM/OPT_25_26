@@ -4,8 +4,20 @@ edad = int(input("¿Cuántos años tienes? "))
 altura = float(input("¿Cuánto mides? "))
 
 
-estudia = input("¿Estudias actualmente? (y/n) ") == "y"
+estudia = input("¿Estudias actualmente? (y/n) ")
 
-print(f"Me llamo {nombre}, tengo {edad} años, mido {altura} y actualmente estudio: {estudia}")
+y = True
+n = False
+
+"""
+if (estudia == "y"):
+    resp = "sí"
+elif (estudia == "n"):
+    resp = "no"
+else:
+    resp = "no se si"
+"""
+
+print(f"Me llamo {nombre}, tengo {edad} años, mido {altura} y actualmente {estudia} estudio")
 
 
