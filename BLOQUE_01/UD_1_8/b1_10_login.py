@@ -41,6 +41,9 @@ Si falla las 3 veces seguidas → mostrar “Demasiados intentos fallidos 🚫. 
 El programa debe ejecutarse en bucle hasta que el usuario elija la opción Salir.
 
 """
+usu_reg = []
+cont_reg = []
+
 while True:
     print("|######################################|")
     print("|#############  MENÚ   ################|")
@@ -49,9 +52,6 @@ while True:
     print("| [2].- Iniciar sesión                 |")
     print("| [3].- Salir                          |")
     print("|######################################|")
-
-    usu_reg = []
-    cont_reg = []
 
     opt = int(input("       Introduce tu opción: "))
 
@@ -84,6 +84,7 @@ while True:
         usu_reg.append(username)
         cont_reg.append(password)
         print(f"´{usu_reg} registrado correctamente.")
+
     elif (opt == 2):
         cont = 0
         while (cont <= 3):
@@ -104,6 +105,7 @@ while True:
                 print("Usuario no encontrado. Acceso denegado")
                 break
     elif (opt == 3):
+        print("Saliendo..")
         exit()
     else:
         print("Opción incorrecta")
