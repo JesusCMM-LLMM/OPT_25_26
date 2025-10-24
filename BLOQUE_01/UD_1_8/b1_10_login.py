@@ -1,6 +1,7 @@
 """
  Este es el menú sin funciones. Lo primero, para no usar funciones y que solo se cierre al usar la opcion 3, el menú está dentro de un while True.
  Segundo, los arrays vacíos van fuera del bucle para que no se reinicien en cada vuelta.
+ NO HEMOS USADO FUNCIONES aunque venía así en la rúbrica de la entrega porque no estaban dentro de este bloque 01
 """
 
 usu_reg = []
