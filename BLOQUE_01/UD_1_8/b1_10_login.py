@@ -41,48 +41,69 @@ Si falla las 3 veces seguidas → mostrar “Demasiados intentos fallidos 🚫. 
 El programa debe ejecutarse en bucle hasta que el usuario elija la opción Salir.
 
 """
-print("|######################################|")
-print("|#############  MENÚ   ################|")
-print("|######################################|")
-print("| [1].- Registrarse                    |")
-print("| [2].- Iniciar sesión                 |")
-print("| [3].- Salir                          |")
-print("|######################################|")
+while True:
+    print("|######################################|")
+    print("|#############  MENÚ   ################|")
+    print("|######################################|")
+    print("| [1].- Registrarse                    |")
+    print("| [2].- Iniciar sesión                 |")
+    print("| [3].- Salir                          |")
+    print("|######################################|")
 
-usu_reg = []
-cont_reg = []
+    usu_reg = []
+    cont_reg = []
 
-opt = int(input("       Introduce tu opción: "))
+    opt = int(input("       Introduce tu opción: "))
 
-if (opt == 1):
-    username = input("Introduce usuario a registrar: ")
-    car_no_perm = ['!', '#', '$', '%', '&', '*', '?']
-    while (
-            len(username) <= 3 or
-            '@' not in username or
-            not (username.endswith('.com') or username.endswith('.es') or username.endswith('.net')) or
-            any(c in username for c in car_no_perm)
-    ):
-        print(
-            "El usuario debe tener más de 3 caracteres, contener '@', terminar en .com, .net o .es y no incluir caracteres especiales (!, #, $, %, &, *, ?)")
-        username = input("Introduce un nombre de usuario válido: ")
+    if (opt == 1):
+        username = input("Introduce usuario a registrar: ")
+        car_no_perm = ['!', '#', '$', '%', '&', '*', '?']
+        while (
+                len(username) <= 3 or
+                '@' not in username or
+                not (username.endswith('.com') or username.endswith('.es') or username.endswith('.net')) or
+                any(c in username for c in car_no_perm)
+        ):
+            print(
+                "El usuario debe tener más de 3 caracteres, contener '@', terminar en .com, .net o .es y no incluir caracteres especiales (!, #, $, %, &, *, ?)")
+            username = input("Introduce un nombre de usuario válido: ")
 
-    print(f"Usuario {username} creado correctamente")
-    password = input("Introduce la nueva contraseña: ")
-    while (
-            len(password) < 8 or
-            not any(c.isupper() for c in password) or
-            not any(c.islower() for c in password) or
-            not any(c in car_no_perm for c in password)
-    ):
-        print(
-            "La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula y un carácter especial (!, @, #, $, %, &, *, ?).")
-        password = input("Introduce una nueva contraseña: ")
-        print("Contraseña creada correctamente")
+        print(f"Usuario {username} válido")
+        password = input("Introduce la nueva contraseña: ")
+        while (
+                len(password) < 8 or
+                not any(c.isupper() for c in password) or
+                not any(c.isnumeric() for c in password) or
+                not any(c in car_no_perm for c in password)
+        ):
+            print(
+                "La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula y un carácter especial (!, @, #, $, %, &, *, ?).")
+            password = input("Introduce una nueva contraseña: ")
+            print("Contraseña creada correctamente")
 
-    usu_reg.append(username)
-    cont_reg.append(password)
-    print(f"´{usu_reg}")
-
-else:
-    print("Te queda código por hacer, chaval")
+        usu_reg.append(username)
+        cont_reg.append(password)
+        print(f"´{usu_reg} registrado correctamente.")
+    elif (opt == 2):
+        cont = 0
+        while (cont <= 3):
+            usu_comp = input("Introduce el usuario con el que quieres iniciar sesión: ")
+            cont_comp = input("Introduce su contraseña: ")
+            if usu_comp in usu_reg:
+                indice = usu_reg.index(
+                    usu_comp)  # vamos a llamar al indice del array creado antes para comparar posiciones
+                if cont_comp == cont_reg[indice]:
+                    print("Acceso concedido")
+                    break
+                else:
+                    cont += 1
+                    print("Contraseña incorrecta. Inténtalo de nuevo.")
+                    if cont == 3:
+                        print("Demasiados intentos fallidos. Regresando al menú principal.")
+            else:
+                print("Usuario no encontrado. Acceso denegado")
+                break
+    elif (opt == 3):
+        exit()
+    else:
+        print("Opción incorrecta")
