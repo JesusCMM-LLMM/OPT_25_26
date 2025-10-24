@@ -18,7 +18,7 @@ while True:
     # La opción como una variable que va a leerse en el if/elif/else
     opt = int(input("       Introduce tu opción: "))
 
-    if (opt == 1):
+    if opt == 1:
         username = input("Introduce usuario a registrar: ")
         car_no_perm = ['!', '#', '$', '%', '&', '*', '?']  # defino una variable con los caracteres no permitidos que
         # vamos a usar tanto en usuario como en contraseña
@@ -49,9 +49,9 @@ while True:
         cont_reg.append(password)
         print(f"´{usu_reg} registrado correctamente.")
 
-    elif (opt == 2):
+    elif opt == 2:
         cont = 0
-        while (cont <= 3):
+        while cont <= 3:
             usu_comp = input("Introduce el usuario con el que quieres iniciar sesión: ")
             cont_comp = input("Introduce su contraseña: ")
             # vamos a comprobar que el usuario esté y después a comprobar en qué posición del array está
@@ -70,7 +70,7 @@ while True:
             else:
                 print("Usuario no encontrado. Acceso denegado")
                 break
-    elif (opt == 3):
+    elif opt == 3:
         print("Saliendo..")
         exit()
     else:
