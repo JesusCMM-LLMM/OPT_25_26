@@ -16,7 +16,6 @@ while True:
     print("|######################################|")
 
     # Meto el input, la opcion, en un try-except por si el usuario escribe cualquier otra cosa en vez de un número.
-    # Esto hace redundante el else al final
     try:
         opt = int(input("        Introduce tu opción: "))
     except ValueError:
@@ -80,3 +79,5 @@ while True:
     elif (opt == 3):
         print("Saliendo..")
         exit()
+    else:
+        print("Opción incorrecta. Introduce 1, 2 o 3.")
