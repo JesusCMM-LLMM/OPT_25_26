@@ -35,9 +35,9 @@ while True:
         print(f"Usuario {username} válido")
         password = input("Introduce la nueva contraseña: ")
         while (  # igual que en el usuario, agrupo las condiciones
-                len(password) < 8 or
-                not any(c.isupper() for c in password) or
-                not any(c.isnumeric() for c in password) or
+                len(password) < 8 and
+                not any(c.isupper() for c in password) and
+                not any(c.isnumeric() for c in password) and
                 not any(c in car_no_perm for c in password)
         ):
             print(
@@ -51,7 +51,7 @@ while True:
 
     elif opt == 2:
         cont = 0
-        while cont <= 3:
+        while cont < 3:
             usu_comp = input("Introduce el usuario con el que quieres iniciar sesión: ")
             cont_comp = input("Introduce su contraseña: ")
             # vamos a comprobar que el usuario esté y después a comprobar en qué posición del array está
