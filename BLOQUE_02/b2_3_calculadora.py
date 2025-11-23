@@ -1,7 +1,8 @@
 """
 Igual que antes, he definido la funcion de reinicio para evitar el viaje al boton cada vez que petaba
 Cada operación devuelve un resultado numérico, y por esto me ha causado dudas si poner en la funcion de division
-el control de la division entre 0 o en el momento de pintarla
+el control de la division entre 0 o en el momento de pintarla 
+[¿Podría hacerse con un while?]
 """
 
 def sumar(a, b):
