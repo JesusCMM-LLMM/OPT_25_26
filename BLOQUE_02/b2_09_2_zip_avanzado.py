@@ -13,7 +13,7 @@ for nomb, mat, fis, quim in zip(estudiantes, notas_matematicas, notas_fisica, no
     estado = ""
     if nota_media >= 6.5:
         estado = "Aprobado"
-    elif nota_media > 5:
+    elif nota_media >= 5:
         estado = "En recuperación"
     else:
         estado = "Suspenso"

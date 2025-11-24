@@ -13,7 +13,7 @@ for i, (nomb, mat, fis, quim) in enumerate(zip(estudiantes, notas_matematicas, n
     estado = ""
     if nota_media >= 6.5:
         estado = "Aprobado"
-    elif nota_media > 5:
+    elif nota_media >= 5:
         estado = "En recuperación"
     else:
         estado = "Suspenso"

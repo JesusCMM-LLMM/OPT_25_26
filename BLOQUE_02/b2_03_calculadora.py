@@ -18,7 +18,7 @@ def multiplicar(a, b):
 
 
 def dividir(a, b):
-    if b == 0:
+    if b == 0:      # Si b es 0, devuelveme none porque no puedo dividir entre 0
         return None 
     else:
         return a / b
@@ -37,9 +37,13 @@ def reinicio():
 
 
 def calc():
-    print("--- CALCULADORA BÁSICA ---")
-    num1 = float(input("Introduce el primer número: "))
-    num2 = float(input("Introduce el segundo número: "))
+    try:
+        print("--- CALCULADORA BÁSICA ---")
+        num1 = float(input("Introduce el primer número: "))
+        num2 = float(input("Introduce el segundo número: "))
+    except ValueError:
+        print("Introduce un número, por favor")
+        calc()
     # Los casteo a float para poder tener decimales
     print("---- RESULTADOS ----")
     print(f"Suma:           {sumar(num1, num2)}")
@@ -50,6 +54,5 @@ def calc():
     else:
         print(f"División:       {dividir(num1, num2)}")
     reinicio()
-
 
 calc()
