@@ -1,8 +1,3 @@
-"""
-Programa: gestor_notas.py
-Descripción: Aplicación de consola para gestionar un archivo de notas de texto.
-Permite visualizar, añadir y eliminar notas con persistencia de datos.
-"""
 ARCHIVO = "notas.txt"
 
 def ver_notas():
