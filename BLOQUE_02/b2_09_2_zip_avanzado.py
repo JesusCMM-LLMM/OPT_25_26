@@ -29,5 +29,3 @@ for nomb, mat, fis, quim in zip(estudiantes, notas_matematicas, notas_fisica, no
 #Y ya lo pintamos con un for
 for nombre, notas in resultado_final.items():
     print(f"{nombre} - Matemáticas: {notas['Matemáticas']}, Física: {notas['Física']}, Química: {notas['Química']}, Media: {notas['Media']}, Estado: {notas['Estado']}")
-
-    
